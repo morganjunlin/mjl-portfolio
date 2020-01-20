@@ -1,24 +1,23 @@
 {
-  "name": "mjl-portfolio",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build-dev": "webpack -w --mode development",
-    "build-prod": "webpack --mode production",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-prod": "webpack --mode production"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/morganl92/mjl-portfolio.git"
+    "url": "git+https://github.com/morganl92/portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/morganl92/mjl-portfolio/issues"
+    "url": "https://github.com/morganl92/portfolio/issues"
   },
-  "homepage": "https://github.com/morganl92/mjl-portfolio#readme",
+  "homepage": "https://github.com/morganl92/portfolio#readme",
   "devDependencies": {},
   "dependencies": {
     "@babel/core": "^7.5.5",
@@ -28,6 +27,7 @@
     "path": "^0.12.7",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "webfontloader": "^1.6.28",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
   }
