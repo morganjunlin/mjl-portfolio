@@ -38,7 +38,7 @@ const skills = [
 ]
 
 const Stacks = (props) => (
-  <div id='stacks' style={style}>
+  <section id='stacks' style={style}>
     <p style={title}>
       Technical Stacks
     </p>
@@ -47,35 +47,36 @@ const Stacks = (props) => (
       Frontend
     </p>
     <div style={Object.assign({}, flexContainer, flexRow)}>
-      {frontend.map((stack => <p style={flexItem}>{[stack]}</p>))}
+      {frontend.map(((stack, i) => <p key={i} style={flexItem}>{[stack]}</p>))}
     </div>
 
     <p style={subtitle}>
       Backend
     </p>
     <div style={Object.assign({}, flexContainer, flexRow)}>
-      {backend.map((stack => <p style={flexItem}>{[stack]}</p>))}
+      {backend.map(((stack, i) => <p key={i} style={flexItem}>{[stack]}</p>))}
     </div>
 
     <p style={subtitle}>
       Deployment / Testing
     </p>
     <div style={Object.assign({}, flexContainer, flexRow)}>
-      {deployment.map((stack => <p style={flexItem}>{[stack]}</p>))}
+      {deployment.map(((stack, i) => <p key={i} style={flexItem}>{[stack]}</p>))}
     </div>
 
     <p style={subtitle}>
       Developer Skills
     </p>
     <div style={Object.assign({}, flexContainer, flexRow)}>
-      {skills.map((stack => <p style={flexItem}>{[stack]}</p>))}
+      {skills.map(((stack, i) => <p key={i} style={flexItem}>{[stack]}</p>))}
     </div>
-  </div>
+  </section>
 )
 
 const style = {
   // padding: '64px 512px 16px 512px',
-  fontFamily: 'Avenir'
+  // fontFamily: 'Avenir'
+  backgroundColor: '#EEEEEE'
 }
 
 const title = {

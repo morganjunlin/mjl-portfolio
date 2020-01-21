@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Contact = (props) => (
-  <div style={style}>
+  <section id='contact' style={style}>
     <p style={title}>
       Contact Me
     </p>
@@ -12,12 +12,12 @@ const Contact = (props) => (
       <input type='text' placeholder='Message' style={{height: '200px'}} />
       <input type='submit' value='Submit' />
     </div>
-  </div>
+  </section>
 )
 
 const style = {
   padding: '64px 512px 16px 512px',
-  fontFamily: 'Avenir'
+  // fontFamily: 'Avenir'
 }
 
 const title = {

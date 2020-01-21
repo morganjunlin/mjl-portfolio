@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Projects = (props) => (
-  <div style={style}>
+  <section id='projects' style={style}>
     <p style={title}>
       Projects
     </p>
@@ -20,7 +20,7 @@ const Projects = (props) => (
         </ul>
       </div>
       <div style={flexItem}>
-        <iframe src='https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?device=nexus5&launchUrl=https%3A%2F%2Fexpo.io%2F%40morganjunlin%2Fplatonicly&pc=&screenOnly=false&autoplay=false&embed=true&xdocMsg=true&xDocMsg=true&debug=true&deviceColor=black&orientation=portrait&params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22https%3A%2F%2Fexpo.io%2F%40morganjunlin%2Fplatonicly%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D' width='378px' height='800px' frameborder='0' scrolling='no'></iframe>
+        <iframe src='https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?device=nexus5&launchUrl=https%3A%2F%2Fexpo.io%2F%40morganjunlin%2Fplatonicly&pc=&screenOnly=false&autoplay=false&embed=true&xdocMsg=true&xDocMsg=true&debug=true&deviceColor=black&orientation=portrait&params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22https%3A%2F%2Fexpo.io%2F%40morganjunlin%2Fplatonicly%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D' width='378px' height='800px' frameBorder='0' scrolling='no'></iframe>
       </div>
     </div>
 
@@ -57,12 +57,12 @@ const Projects = (props) => (
         <img style={img} src='https://matthew-mata.herokuapp.com/imgs/nordstrom.gif' />
       </div>
     </div>
-  </div>
+  </section>
 )
 
 const style = {
   // padding: '64px 512px',
-  fontFamily: 'Avenir'
+  // fontFamily: 'Avenir'
 }
 
 const title = {

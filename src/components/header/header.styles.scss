@@ -1,0 +1,30 @@
+$image-url: url('https://thumbs.gfycat.com/IllegalSomberAnhinga-max-1mb.gif');
+
+.header {
+  font-family: Lato;
+  background-image: $image-url;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .caption {
+    text-align: center;
+    color: #FFF;
+  }
+
+  .item {
+    padding: 12px 0;
+  }
+
+  .border {
+    background-color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+}
