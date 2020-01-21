@@ -2,35 +2,6 @@ import React, { Component } from 'react';
 
 import './navigation.styles.scss';
 
-// const items = [
-//   {
-//     name: 'Home',
-//     id: 'Home'
-//   },
-//   {
-//     name: 'About',
-//     id: 'about'
-//   },
-//   {
-//     name: 'Previous Work',
-//     id: 'projects'
-//   },
-//   {
-//     name: 'Tech Stacks',
-//     id: 'stacks'
-//   },
-//   {
-//     name: 'Contact',
-//     id: 'contact'
-//   }
-// ];
-
-// const Navigation = (props) => (
-//   <nav className='navigation'>
-//     {items.map(item => <p className='item'>{item.name}</p>)}
-//   </nav>
-// );
-
 class Navigation extends Component {
   constructor(props) {
     super(props);
