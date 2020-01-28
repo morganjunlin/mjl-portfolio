@@ -2,7 +2,7 @@ module.exports = {
   Frontend: [
     {
       id: 'js',
-      name: 'Javascript (ES5 and ES6)',
+      name: 'Javascript',
       image: 'https://cdn.svgporn.com/logos/javascript.svg'
     },
     {
@@ -104,7 +104,7 @@ module.exports = {
     {
       id: 'git',
       name: 'Git',
-      image: 'https://cdn.svgporn.com/logos/github-icon.svg'
+      image: 'https://cdn.svgporn.com/logos/git-icon.svg'
     },
     {
       id: 'yarn',
