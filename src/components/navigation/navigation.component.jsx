@@ -21,7 +21,7 @@ class Navigation extends Component {
           id: 'stacks'
         },
         {
-          name: 'PROJECTS',
+          name: 'APPLICATIONS',
           id: 'projects'
         },
         {
