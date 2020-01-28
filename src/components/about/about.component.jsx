@@ -5,7 +5,7 @@ import './about.styles.scss';
 const About = (props) => (
   <section id='about' className='about'>
     <h1 className='title'>
-      About Me
+      ABOUT
     </h1>
     <div className='container'>
       <img className='profile-pic' src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/IMG_2062_512.jpg' />
