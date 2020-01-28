@@ -1,0 +1,74 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+.projects {
+  padding: 5px;
+  margin: 5px 45px;
+  
+  .title {
+    text-align: center;
+    // font-size: 16px;
+  }
+  
+  .container {
+    padding: 5px;
+    margin: 5px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    .item {
+      // flex-grow: 1;
+      padding: 20px;
+      margin: 5px;
+
+      .btn-container {
+        // justify-content: flex-end;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+
+        input {
+          background-image: url(https://mjl-portfolio.s3.us-east-2.amazonaws.com/github-4.svg);
+          background-repeat: no-repeat;
+          background-position: 5px center;
+          padding: 7px 5px 7px 35px;
+          border: 2px solid #000;
+          font-size: 16px;
+          letter-spacing: 1px;
+        }
+        
+        input:hover {
+          background-image: url(https://mjl-portfolio.s3.us-east-2.amazonaws.com/github-5.svg);
+          background-color: #CCCCCC;
+        }
+      }
+
+    }
+    .gif {
+      height: 300px;
+      width: 550px;
+
+      @media screen and (max-width: $screen-lg-min) {
+        height: 200px;
+        width: 350px;
+      }
+  
+      @media screen and (min-width: $screen-xl-min) {
+        height: 300px;
+        width: 550px;
+      }
+    }
+  }
+}
