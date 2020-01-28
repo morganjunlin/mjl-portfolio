@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal portfolio",
   "main": "index.js",
   "scripts": {
     "build-dev": "webpack -w --mode development",
@@ -12,11 +12,8 @@
     "url": "git+https://github.com/morganl92/portfolio.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Morgan Lin",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/morganl92/portfolio/issues"
-  },
   "homepage": "https://github.com/morganl92/portfolio#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
