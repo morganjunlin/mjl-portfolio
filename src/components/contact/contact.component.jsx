@@ -1,29 +1,19 @@
 import React from 'react';
 
+import './contact.styles.scss';
+
 const Contact = (props) => (
-  <section id='contact' style={style}>
-    <p style={title}>
-      Contact Me
-    </p>
+  <section id='contact' className='contact'>
+    <h1>
+      CONTACT
+    </h1>
 
     <div>
-      <input type='text' placeholder='Your name' />
-      <input type='text' placeholder='Your email' />
-      <input type='text' placeholder='Message' style={{height: '200px'}} />
-      <input type='submit' value='Submit' />
+      <img src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/email-13.svg' />
+      <img src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/linkedin-3.svg' onClick={() => window.location.href='https://www.linkedin.com/in/morganjunlin/'} />
+      <img src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/github-1.svg' onClick={() => window.location.href='https://github.com/morganjunlin/'}/>
     </div>
   </section>
 )
-
-const style = {
-  padding: '64px 512px 16px 512px',
-  // fontFamily: 'Avenir'
-}
-
-const title = {
-  textAlign: 'center',
-  fontWeight: 'bold',
-  fontSize: '24px',
-}
 
 export default Contact;
