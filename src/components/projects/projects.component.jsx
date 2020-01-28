@@ -34,7 +34,7 @@ const Projects = (props) => (
     </h3>
     <div className='container'>
       <div className='item'>
-        <img className='gif' src='https://matthew-mata.herokuapp.com/imgs/grubhub.gif' />
+        <img className='gif' src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/grubhub.gif' />
       </div>
       <div className='item'>
         <ul>
@@ -63,7 +63,7 @@ const Projects = (props) => (
         </div>
       </div>
       <div className='item'>
-        <img className='gif' src='https://matthew-mata.herokuapp.com/imgs/nordstrom.gif' />
+        <img className='gif' src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/nordstrom.gif' />
       </div>
     </div>
   </section>
