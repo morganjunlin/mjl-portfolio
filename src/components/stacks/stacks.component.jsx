@@ -7,7 +7,7 @@ const Stacks = () => (
   <section id='stacks' className='stacks'>
     <div className='container'>
       <h1>
-        Technical Stacks
+        TECH STACKS
       </h1>
 
       {Object.entries(stacks).map(([technology, stacks], i) => <Stack key={i} technology={technology} stacks={stacks}/>)}
@@ -57,7 +57,12 @@ class Stack extends Component {
             const { id, name, image } = stack;
             return (
               <div key={i} className='item'>
-                <img className='icon' src={image} id={id} onClick={this.renderStackName}/> <br />
+                <img 
+                  className='icon' 
+                  src={image} 
+                  id={id} 
+                  onMouseEnter={this.renderStackName}
+                /> <br />
                 <span>{this.state[id] ? name : ''}</span>
               </div>
             )
