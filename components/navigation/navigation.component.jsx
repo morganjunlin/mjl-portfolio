@@ -1,54 +1,37 @@
-import React, { Component } from 'react';
+import React from 'react';
 
+import items from './items.js';
 import './navigation.styles.scss';
 
-class Navigation extends Component {
-  constructor(props) {
-    super(props);
+const scrollTo = ele => {
+  ele.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+};
 
-    this.state = {
-      items: [
-        {
-          name: 'HOME',
-          id: 'home'
-        },
-        {
-          name: 'ABOUT',
-          id: 'about'
-        },
-        {
-          name: 'TECH STACKS',
-          id: 'stacks'
-        },
-        {
-          name: 'APPLICATIONS',
-          id: 'projects'
-        },
-        {
-          name: 'CONTACT',
-          id: 'contact'
-        }
-      ]
-    }
-  }
+const Navigation = ({ visibleSection, navigationRef, aboutRef, stacksRef, projectsRef, contactRef}) => (
+  <div className='sticky'>
+    <nav className='navigation' ref={navigationRef}>
+      {
+        items.map((item, i) => {
+          const { name, id } = item;
 
-  render() {
-    const { items } = this.state;
-
-    return (
-      <nav className='navigation'>
-        {
-          items.map((item, i) => 
-            <a 
+          return (
+            <button 
+              type='button' 
               key={i} 
-              className={i === 0 ? 'selected item' : 'item'}
-              onClick={() => window.location.href=`#${item.id}`}
-            >{item.name}</a>)
-        }
-      </nav>
-    )
-  }
-}
+              className={`item ${visibleSection === id ? 'selected' : ''}`}
+              onClick={() => {scrollTo(homeRef.current)}}>
+                {name}
+            </button>
+          )
 
+        })
+          
+      }
+    </nav>
+  </div>
+)
 
 export default Navigation;

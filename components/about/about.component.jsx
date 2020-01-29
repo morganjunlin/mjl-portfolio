@@ -2,8 +2,8 @@ import React from 'react';
 
 import './about.styles.scss';
 
-const About = (props) => (
-  <section id='about' className='about'>
+const About = ({ aboutRef }) => (
+  <section id='about' className='about' ref={aboutRef}>
     <h1 className='title'>
       ABOUT
     </h1>

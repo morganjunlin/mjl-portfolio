@@ -2,8 +2,8 @@ import React from 'react';
 
 import './projects.styles.scss';
 
-const Projects = (props) => (
-  <section id='projects' className='projects'>
+const Projects = ({ projectsRef }) => (
+  <section id='projects' className='projects' ref={projectsRef}>
     <h1 className='title'>
       APPLICATIONS
     </h1>

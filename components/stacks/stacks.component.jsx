@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import stacks from './stacks.js';
 import './stacks.styles.scss';
 
-const Stacks = () => (
-  <section id='stacks' className='stacks'>
+const Stacks = ({ stacksRef }) => (
+  <section id='stacks' className='stacks' ref={stacksRef}>
     <div className='container'>
       <h1>
         TECH STACKS

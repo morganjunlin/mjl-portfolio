@@ -4,6 +4,7 @@ $image-url: url('https://thumbs.gfycat.com/FrighteningSparklingHomalocephale-max
   font-family: Lato;
   background-image: $image-url;
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

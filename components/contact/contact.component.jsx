@@ -2,8 +2,8 @@ import React from 'react';
 
 import './contact.styles.scss';
 
-const Contact = (props) => (
-  <section id='contact' className='contact'>
+const Contact = ({ contactRef }) => (
+  <section id='contact' className='contact' ref={contactRef}>
     <h1>
       CONTACT
     </h1>
