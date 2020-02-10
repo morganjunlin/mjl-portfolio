@@ -10,28 +10,31 @@ const scrollTo = ele => {
   });
 };
 
-const Navigation = ({ visibleSection, navigationRef, aboutRef, stacksRef, projectsRef, contactRef}) => (
-  <div className='sticky'>
-    <nav className='navigation' ref={navigationRef}>
-      {
-        items.map((item, i) => {
-          const { name, id } = item;
+const Navigation = (props) => {
+  const { visibleSection, navigationRef } = props
 
-          return (
-            <button 
-              type='button' 
-              key={i} 
-              className={`item ${visibleSection === id ? 'selected' : ''}`}
-              onClick={() => {scrollTo(homeRef.current)}}>
-                {name}
-            </button>
-          )
+  return (
+    <div className='sticky'>
+      <nav className='navigation' ref={navigationRef}>
+        {
+          items.map((item, i) => {
+            const { name, id } = item;
 
-        })
-          
-      }
-    </nav>
-  </div>
-)
+            return (
+              <button 
+                type='button' 
+                key={i} 
+                className={`item ${visibleSection === id ? 'selected' : ''}`}
+                onClick={() => {scrollTo(props[id + 'Ref'].current)}}>
+                  {name}
+              </button>
+            )
+
+          })
+            
+        }
+      </nav>
+    </div>
+)}
 
 export default Navigation;
