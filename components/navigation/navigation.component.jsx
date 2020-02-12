@@ -3,15 +3,8 @@ import React from 'react';
 import items from './items.js';
 import './navigation.styles.scss';
 
-const scrollTo = ele => {
-  ele.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
-  });
-};
-
 const Navigation = (props) => {
-  const { visibleSection, navigationRef } = props
+  const { visibleSection, navigationRef, scrollTo } = props
 
   return (
     <div className='sticky'>
@@ -25,7 +18,7 @@ const Navigation = (props) => {
                 type='button' 
                 key={i} 
                 className={`item ${visibleSection === id ? 'selected' : ''}`}
-                onClick={() => {scrollTo(props[id + 'Ref'].current)}}>
+                onClick={() => scrollTo(props[id + 'Ref'].current)}>
                   {name}
               </button>
             )
