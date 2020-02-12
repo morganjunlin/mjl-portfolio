@@ -13,6 +13,9 @@ const Projects = ({ projectsRef }) => (
     </h3>
     <div className='container'>
       <div className='item'>
+        <iframe src='https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?device=nexus5&launchUrl=https%3A%2F%2Fexpo.io%2F%40morganjunlin%2Fplatonicly&pc=&screenOnly=false&autoplay=false&embed=true&xdocMsg=true&xDocMsg=true&debug=true&deviceColor=black&orientation=portrait&params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22https%3A%2F%2Fexpo.io%2F%40morganjunlin%2Fplatonicly%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D' height='600px' frameBorder='0' scrolling='no'></iframe>
+      </div>
+      <div className='item'>
         <ul>
           <li>Provided users with multiple sign-in options, including Facebook, by utilizing OAuth 2.0 as the authentication protocol</li>
           <li>Routed individual user profile pages to be viewed from event listings with React Navigation, as well as dynamically render events the user is attending</li>
@@ -21,9 +24,6 @@ const Projects = ({ projectsRef }) => (
         <div className='btn-container'>
           <input type='button' value='View on GitHub' onClick={() => window.location.href='https://github.com/morganjunlin/platonic.ly'}/>
         </div>
-      </div>
-      <div className='item'>
-        <iframe src='https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?device=nexus5&launchUrl=https%3A%2F%2Fexpo.io%2F%40morganjunlin%2Fplatonicly&pc=&screenOnly=false&autoplay=false&embed=true&xdocMsg=true&xDocMsg=true&debug=true&deviceColor=black&orientation=portrait&params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22https%3A%2F%2Fexpo.io%2F%40morganjunlin%2Fplatonicly%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D' width='378px' height='800px' frameBorder='0' scrolling='no'></iframe>
       </div>
     </div>
 
@@ -53,6 +53,9 @@ const Projects = ({ projectsRef }) => (
     </h3>
     <div className='container'>
       <div className='item'>
+        <img className='gif' src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/nordstrom.gif' />
+      </div>
+      <div className='item'>
         <ul>
           <li>Recreated functionality of the nav-items by storing individual department into categories and mathematically dividing these categories through CSS widths and floats</li>
           <li>Incorporated a micro-service architecture to isolate maintainability of data and error handling</li>
@@ -61,9 +64,6 @@ const Projects = ({ projectsRef }) => (
         <div className='btn-container'>
           <input type='button' value='View on GitHub' onClick={() => window.location.href='https://github.com/tormund-and-big-lady/nav-bar-service'}/>
         </div>
-      </div>
-      <div className='item'>
-        <img className='gif' src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/nordstrom.gif' />
       </div>
     </div>
   </section>
