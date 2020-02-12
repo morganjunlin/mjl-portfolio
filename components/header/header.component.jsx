@@ -2,7 +2,7 @@ import React from 'react';
 
 import './header.styles.scss';
 
-const Header = ({ homeRef }) => {
+const Header = ({ homeRef, projectsRef, scrollTo }) => {
   let vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty('--vh', `${vh}px`);
 
@@ -24,6 +24,9 @@ const Header = ({ homeRef }) => {
             Full-Stack Software Engineer
           </span>
         </div>
+      </div>
+      <div className='btn-container'>
+        <button onClick={() => scrollTo(projectsRef.current)}>View Projects</button>
       </div>
     </section>
   );
