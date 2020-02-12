@@ -62,6 +62,7 @@ class Stack extends Component {
                   src={image} 
                   id={id} 
                   onMouseEnter={this.renderStackName}
+                  onMouseLeave={this.renderStackName}
                 /> <br />
                 <span>{this.state[id] ? name : ''}</span>
               </div>
