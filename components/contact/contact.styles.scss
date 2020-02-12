@@ -14,16 +14,21 @@ $screen-xl-min: 1200px;
   padding: 50px;
   text-align: center;
   background-color: #EEEEEE;
-  -webkit-border-radius: 12px;
-          border-radius: 12px;
+  scroll-margin: 70px;
+  // -webkit-border-radius: 12px;
+  //         border-radius: 12px;
   
 
-  @media screen and (max-width: $screen-xl-min) {
-    margin: 5px;
-  }
+  // @media screen and (max-width: $screen-xl-min) {
+  //   margin: 5px;
+  // }
 
-  @media screen and (min-width: $screen-xl-min) {
-    margin: 12px 64px;
+  // @media screen and (min-width: $screen-xl-min) {
+  //   margin: 12px 64px;
+  // }
+
+  h1 {
+    font-size: 30pt;
   }
 
   img {

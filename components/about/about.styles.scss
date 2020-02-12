@@ -13,9 +13,11 @@ $screen-xl-min: 1200px;
 .about {
   padding: 20px;
   margin: 20px;
+  scroll-margin: 70px;
 
   .title {
     text-align: center;
+    font-size: 30pt;
   }
 
   .container {
@@ -35,9 +37,7 @@ $screen-xl-min: 1200px;
   }
 
   .profile-pic {
-    border-radius: 90%;
-    object-fit: cover;
-    border: 2px solid #000;
+    border-radius: 50%;
 
     @media screen and (max-width: $screen-md-min) {
       width: 200px;
