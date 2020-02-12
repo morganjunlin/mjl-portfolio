@@ -15,11 +15,20 @@ const getDimensions = ele => {
   const offsetTop = ele.offsetTop;
   const offsetBottom = offsetTop + height;
 
+  console.log('this is offset top', height)
+
   return {
     height,
     offsetTop,
     offsetBottom,
   };
+};
+
+const scrollTo = ele => {
+  ele.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
 };
 
 export default function App() {
@@ -69,7 +78,7 @@ export default function App() {
 
   return (
     <>
-      <Header homeRef={homeRef} />
+      <Header homeRef={homeRef} projectsRef={projectsRef} scrollTo={scrollTo} />
       <Navigation 
         visibleSection={visibleSection} 
         homeRef={homeRef} 
@@ -78,6 +87,7 @@ export default function App() {
         stacksRef={stacksRef}
         projectsRef={projectsRef}
         contactRef={contactRef}
+        scrollTo={scrollTo} 
       />
       <About aboutRef={aboutRef} />
       <Stacks stacksRef={stacksRef} />
