@@ -29,9 +29,6 @@ const scrollTo = ele => {
   });
 };
 
-const test = document.getElementById('about');
-console.log('this is test', test)
-
 export default function App() {
   const [visibleSection, setVisibleSection] = useState();
 
@@ -51,8 +48,8 @@ export default function App() {
   ];
 
   useEffect(() => {
-    const { height: headerHeight } = getDimensions(navigationRef.current);
     const handleScroll = () => {
+      const { height: headerHeight } = getDimensions(navigationRef.current);
       const scrollPosition = window.scrollY + headerHeight;
 
       const selected = sectionRefs.find(({ section, ref }) => {
