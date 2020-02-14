@@ -11,7 +11,7 @@ $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
 
 .projects {
-  padding: 5px;
+  padding: 25px;
   margin: 5px;
   scroll-margin: 70px;
   
@@ -38,7 +38,7 @@ $screen-xl-min: 1200px;
     }
 
     .item.expo {
-      margin: 0 auto;
+      margin-left: 10%;
 
       @media screen and (max-width: $screen-lg-min) {
         margin: 0 0;
@@ -52,7 +52,7 @@ $screen-xl-min: 1200px;
       align-self: center;
 
       // iframe {
-      //   margin: 0 0 0 100px;
+      //   margin: 0 0 0 30%;
       // }
 
       .btn-container {
