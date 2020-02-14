@@ -1,10 +1,11 @@
-$image-url: url('https://thumbs.gfycat.com/FrighteningSparklingHomalocephale-max-1mb.gif');
+// $image-url: url('https://thumbs.gfycat.com/FrighteningSparklingHomalocephale-max-1mb.gif');
+$image-url: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/4DBE5C62-55F6-48F6-BF73-1A460DFB5879.jpg');
 
 .header {
   font-family: Lato;
   background-image: $image-url;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
+  height: calc(var(--vh, 1vh) * 100 - 70px);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
