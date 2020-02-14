@@ -12,7 +12,7 @@ const Projects = ({ projectsRef }) => (
       Platonic.ly: Event Finder Social Media Application
     </h3>
     <div className='container'>
-      <div className='item'>
+      <div className='item expo'>
         <iframe src='https://appetize.io/embed/xc1w6f1krd589zhp22a0mgftyw?device=nexus5&launchUrl=https%3A%2F%2Fexpo.io%2F%40morganjunlin%2Fplatonicly&pc=&screenOnly=false&autoplay=false&embed=true&xdocMsg=true&xDocMsg=true&debug=true&deviceColor=black&orientation=portrait&params=%7B%22EXKernelLaunchUrlDefaultsKey%22%3A%22https%3A%2F%2Fexpo.io%2F%40morganjunlin%2Fplatonicly%22%2C%22EXKernelDisableNuxDefaultsKey%22%3Atrue%7D' height='600px' frameBorder='0' scrolling='no'></iframe>
       </div>
       <div className='item'>
