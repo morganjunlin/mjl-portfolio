@@ -3,10 +3,6 @@ import React from 'react';
 import './header.styles.scss';
 
 const Header = ({ navHeight, homeRef, projectsRef, scrollTo }) => {
-  console.log(navHeight, 'this is nav height')
-  // let vh = window.innerHeight * 0.01;
-  // document.documentElement.style.setProperty('--vh', `${vh}px`);
-
   window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -26,9 +22,6 @@ const Header = ({ navHeight, homeRef, projectsRef, scrollTo }) => {
           </span>
         </div>
       </div>
-      {/* <div className='btn-container'>
-        <button onClick={() => scrollTo(projectsRef.current)}>View Projects</button>
-      </div> */}
     </section>
   );
 }
