@@ -15,8 +15,6 @@ const getDimensions = ele => {
   const offsetTop = ele.offsetTop;
   const offsetBottom = offsetTop + height;
 
-  console.log('this is offset top', height)
-
   return {
     height,
     offsetTop,
@@ -30,6 +28,9 @@ const scrollTo = ele => {
     block: "start",
   });
 };
+
+const test = document.getElementById('about');
+console.log('this is test', test)
 
 export default function App() {
   const [visibleSection, setVisibleSection] = useState();
@@ -50,8 +51,8 @@ export default function App() {
   ];
 
   useEffect(() => {
+    const { height: headerHeight } = getDimensions(navigationRef.current);
     const handleScroll = () => {
-      const { height: headerHeight } = getDimensions(navigationRef.current);
       const scrollPosition = window.scrollY + headerHeight;
 
       const selected = sectionRefs.find(({ section, ref }) => {
