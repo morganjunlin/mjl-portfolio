@@ -61,10 +61,11 @@ class Stack extends Component {
                   className='icon' 
                   src={image} 
                   id={id} 
-                  onMouseEnter={this.renderStackName}
-                  onMouseLeave={this.renderStackName}
+                  // onMouseEnter={this.renderStackName}
+                  // onMouseLeave={this.renderStackName}
                 /> <br />
-                <span>{this.state[id] ? name : ''}</span>
+                {/* <span>{this.state[id] ? name : ''}</span> */}
+                <span>{name}</span>
               </div>
             )
           })}
