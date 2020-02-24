@@ -8,12 +8,12 @@ module.exports = [
     id: 'about'
   },
   {
-    name: 'TECH STACKS',
-    id: 'stacks'
-  },
-  {
     name: 'APPLICATIONS',
     id: 'projects'
+  },
+  {
+    name: 'TECH STACKS',
+    id: 'stacks'
   },
   {
     name: 'CONTACT',
