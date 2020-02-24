@@ -15,64 +15,31 @@ const Stacks = ({ stacksRef }) => (
   </section>
 )
 
-class Stack extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-
-    }
-
-    this.renderStackName = this.renderStackName.bind(this);
-  }
-
-  renderStackName(e) {
-    const { id } = e.target;
-
-    if (this.state[id] === undefined || this.state[id] === false) {
-      this.setState({
-        [id]: true
-      })
-    } else {
-      this.setState({
-        [id]: false
-      })
-    }
-  }
-
-  render() {
-    const { technology, stacks } = this.props;
-
-    return (
-      <>
-        <h3>
-          {
-            technology === 'Deployment' ? 'Deployment / Testing'
-            : technology === 'Skills' ? 'Developer Skills'
-            : technology
-          }
-        </h3>
-        <div className='technology'>
-          {stacks.map((stack, i) => {
-            const { id, name, image } = stack;
-            return (
-              <div key={i} className='item'>
-                <img 
-                  className='icon' 
-                  src={image} 
-                  id={id} 
-                  // onMouseEnter={this.renderStackName}
-                  // onMouseLeave={this.renderStackName}
-                /> <br />
-                {/* <span>{this.state[id] ? name : ''}</span> */}
-                <span>{name}</span>
-              </div>
-            )
-          })}
-        </div>
-      </>
-    )
-  }
-}
+const Stack = ({ technology, stacks }) => (
+  <>
+    <h3>
+      {
+        technology === 'Deployment' ? 'Deployment / Testing'
+        : technology === 'Skills' ? 'Developer Skills'
+        : technology
+      }
+    </h3>
+    <div className='technology'>
+      {stacks.map((stack, i) => {
+        const { id, name, image } = stack;
+        return (
+          <div key={i} className='item'>
+            <img 
+              className='icon' 
+              src={image} 
+              id={id}
+            /> <br />
+            <span>{name}</span>
+          </div>
+        )
+      })}
+    </div>
+  </>
+)
 
 export default Stacks;
