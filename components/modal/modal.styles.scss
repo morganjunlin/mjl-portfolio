@@ -1,0 +1,59 @@
+.modal {
+  z-index: 99;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #00000080;
+
+  position: fixed;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  
+  .item {
+    background-color: #fff;
+    margin: 0 300px;
+    width: 750px;
+
+    
+
+    .carousel {
+      text-align: center;
+
+      #mvp {
+        width: 35%;
+      }
+
+      img {
+        width: 100%;
+      }
+      
+    }
+
+    .description {
+      padding: 20px;
+    }
+
+    .bottom-nav {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background-color: #222;
+        color: #fff;
+        padding: 10px 15px;
+        border: 2px solid #000;
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+      
+      button:hover {
+        background-color: #CCCCCC;
+        cursor: pointer;
+      }
+    }
+  }
+}
