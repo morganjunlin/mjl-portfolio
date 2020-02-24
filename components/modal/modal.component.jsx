@@ -3,7 +3,7 @@ import React from 'react';
 import './modal.styles.scss';
 
 const Modal = ({ showModal, handleModal, project }) => {
-  let { title, subtitle, description, images, css } = project;
+  let { title, subtitle, description, images, css, link } = project;
 
   if (showModal) {
     return (
@@ -21,7 +21,7 @@ const Modal = ({ showModal, handleModal, project }) => {
             </ul>
           </div>
           <div className='bottom-nav'>
-            <button>View Code</button>
+            <button onClick={() => window.location.href=`${link}`}>View Code</button>
             <button onClick={() => handleModal(0)}>Close</button>
           </div>
         </div>

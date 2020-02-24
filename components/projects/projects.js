@@ -11,7 +11,8 @@ module.exports = [
     images: [
       'https://mjl-portfolio.s3.us-east-2.amazonaws.com/mvp.png'
     ],
-    css: 'mvp'
+    css: 'mvp',
+    link: 'https://github.com/morganjunlin/platonic.ly'
   },
   {
     title: 'Grubhub Clone',
@@ -25,7 +26,8 @@ module.exports = [
     images: [
       'https://mjl-portfolio.s3.us-east-2.amazonaws.com/sdc.png'
     ],
-    css: 'sdc'
+    css: 'sdc',
+    link: 'https://github.com/morganjunlin/time-sponsored'
   },
   {
     title: 'Nordstrom Clone',
@@ -39,6 +41,7 @@ module.exports = [
     images: [
       'https://mjl-portfolio.s3.us-east-2.amazonaws.com/fec.png'
     ],
-    css: 'fec'
+    css: 'fec',
+    link: 'https://github.com/tormund-and-big-lady/nav-bar-service'
   }
 ]
