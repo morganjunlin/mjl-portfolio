@@ -2,6 +2,9 @@ import React, { useRef, useEffect, useState } from 'react';
 
 import './App.css';
 
+import productJSON from './components/projects/projects.js';
+
+import Modal from './components/modal/modal.component'
 import Header from './components/header/header.component';
 import Navigation from './components/navigation/navigation.component';
 import About from './components/about/about.component';
@@ -31,7 +34,10 @@ const scrollTo = ele => {
 
 export default function App() {
   const [visibleSection, setVisibleSection] = useState();
+  const [showModal, setModal] = useState(false);
+  const [modalID, setModalID] = useState(0);
 
+  const modalRef = useRef();
   const homeRef = useRef(null);
   const navigationRef = useRef(null);
   const aboutRef = useRef(null);
@@ -46,6 +52,11 @@ export default function App() {
     { section: "projects", ref: projectsRef },
     { section: "contact", ref: contactRef },
   ];
+
+  const handleModal = (i) => {
+    setModal(prevState => !prevState);
+    setModalID(i);
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -76,7 +87,16 @@ export default function App() {
 
   return (
     <>
-      <Header homeRef={homeRef} projectsRef={projectsRef} scrollTo={scrollTo} />
+      <Modal 
+        showModal={showModal} 
+        handleModal={handleModal}
+        project={productJSON[modalID]} 
+      />
+      <Header 
+        homeRef={homeRef} 
+        projectsRef={projectsRef} 
+        scrollTo={scrollTo} 
+      />
       <Navigation 
         visibleSection={visibleSection} 
         homeRef={homeRef} 
@@ -88,8 +108,12 @@ export default function App() {
         scrollTo={scrollTo} 
       />
       <About aboutRef={aboutRef} />
+      <Projects 
+        projectsRef={projectsRef} 
+        handleModal={handleModal} 
+        productJSON={productJSON}
+      />
       <Stacks stacksRef={stacksRef} />
-      <Projects projectsRef={projectsRef} />
       <Contact contactRef={contactRef} />
       <Footer />
     </>
