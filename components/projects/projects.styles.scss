@@ -11,8 +11,9 @@ $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
 
 .projects {
-  padding: 25px;
-  margin: 5px;
+  background-color: #EEEEEE;
+  padding: 10px 5px 55px 5px;
+  // margin: 5px;
   scroll-margin: 70px;
   
   h1.title {
@@ -24,39 +25,89 @@ $screen-xl-min: 1200px;
   }
   
   .container {
-    padding: 5px;
-    margin: 5px;
+    padding: 5px 0;
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     
     @media screen and (max-width: $screen-lg-min) {
       margin: 5px;
       flex-direction: column;
-      // align-content: center;
-    }
-
-    .item.expo {
-      margin-left: 10%;
-
-      @media screen and (max-width: $screen-lg-min) {
-        margin: 0 0;
-      }
     }
 
     .item {
-      // flex-grow: 1;
-      padding: 20px;
-      margin: 5px;
+      width: 400px;
+      height: 400px;
+      // background: #fff;
+      margin: 0 5px;
       align-self: center;
 
-      // iframe {
-      //   margin: 0 0 0 30%;
-      // }
+      @media screen and (max-width: $screen-lg-min) {
+        margin: 5px;
+      }
+
+      #mvp {
+        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/mvp.png');
+      }
+  
+      #sdc {
+        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/sdc.png');
+      }
+  
+      #fec {
+        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/fec.png');
+      }
+
+      .mask {
+        position: absolute;
+        background-color: #ffffffed;
+        padding: 40px;
+        width: 320px;
+        height: 240px;
+        text-align: center;
+
+        button {
+          background-color: #222;
+          color: #fff;
+          padding: 10px 15px;
+          border: 2px solid #000;
+          font-size: 16px;
+          letter-spacing: 1px;
+        }
+        
+        button:hover {
+          background-color: #CCCCCC;
+          cursor: pointer;
+        }
+      }
+
+      .project {
+        // padding: 200px;
+        // background-color:#00000080;
+        background-size: cover;
+        // position: relative;
+        height: 320px;
+
+        img {
+          overflow: hidden;
+          width: 200px;
+        }
+      }
+      
+      .description {
+        padding: 10px;
+        height: 50px;
+        background-color: #FFFFFF;
+        text-align: center;
+
+        h2, h4 {
+          margin: 0;
+          padding: 0;
+        }
+      }
 
       .btn-container {
-        // justify-content: flex-end;
         text-align: center;
         margin: 5px;
         padding: 5px;
@@ -78,22 +129,8 @@ $screen-xl-min: 1200px;
         }
       }
 
-    }
-
-    
-
-    .gif {
-      height: 300px;
-      width: 550px;
-
-      @media screen and (max-width: $screen-lg-min) {
-        height: 200px;
-        width: 350px;
-      }
-  
-      @media screen and (min-width: $screen-xl-min) {
-        height: 300px;
-        width: 550px;
+      .item:hover {
+          background-color: #FFF;
       }
     }
   }
