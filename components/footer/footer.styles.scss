@@ -24,5 +24,6 @@ $screen-xl-min: 1200px;
     cursor: pointer;
     width: 32px;
     height: 32px;
+    filter: invert(89%) sepia(0%) saturate(4179%) hue-rotate(236deg) brightness(122%) contrast(109%);
   }
 }
