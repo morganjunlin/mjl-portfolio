@@ -15,6 +15,10 @@ $screen-xl-min: 1200px;
   margin: 20px;
   scroll-margin: 70px;
 
+  @media screen and (max-width: $screen-sm-min) {
+    scroll-margin: 80px;
+  }
+
   .title {
     text-align: center;
     font-size: 30pt;

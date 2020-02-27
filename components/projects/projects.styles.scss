@@ -15,6 +15,10 @@ $screen-xl-min: 1200px;
   padding: 10px 5px 55px 5px;
   // margin: 5px;
   scroll-margin: 70px;
+
+  @media screen and (max-width: $screen-sm-min) {
+    scroll-margin: 80px;
+  }
   
   h1.title {
     font-size: 30pt;

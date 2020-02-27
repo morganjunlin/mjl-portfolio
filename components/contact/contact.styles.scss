@@ -16,6 +16,10 @@ $screen-xl-min: 1200px;
   background-color: #252934;
   color: #ffffff;
   scroll-margin: 70px;
+
+  @media screen and (max-width: $screen-sm-min) {
+    scroll-margin: 80px;
+  }
   
 
   // @media screen and (max-width: $screen-xl-min) {

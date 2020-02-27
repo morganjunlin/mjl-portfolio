@@ -15,17 +15,11 @@ $screen-xl-min: 1200px;
   // background-color: #EEEEEE;
   text-align: center;
   scroll-margin: 70px;
-  // -webkit-border-radius: 12px;
-  //         border-radius: 12px;
+
+  @media screen and (max-width: $screen-sm-min) {
+    scroll-margin: 80px;
+  }
   
-
-  // @media screen and (max-width: $screen-xl-min) {
-  //   margin: 5px;
-  // }
-
-  // @media screen and (min-width: $screen-xl-min) {
-  //   margin: 12px 64px;
-  // }
 
   .container {
     padding: 5px;
