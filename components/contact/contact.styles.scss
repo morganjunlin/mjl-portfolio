@@ -11,12 +11,11 @@ $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
 
 .contact {
-  padding: 50px;
+  padding: 20px 5px 55px 5px;
   text-align: center;
-  background-color: #EEEEEE;
+  background-color: #252934;
+  color: #ffffff;
   scroll-margin: 70px;
-  // -webkit-border-radius: 12px;
-  //         border-radius: 12px;
   
 
   // @media screen and (max-width: $screen-xl-min) {
@@ -30,20 +29,44 @@ $screen-xl-min: 1200px;
   h1 {
     font-size: 30pt;
   }
-
-  img {
-    margin: 5px;
-    padding: 5px;
-    cursor: pointer;
-
-    @media screen and (max-width: $screen-xl-min) {
-      width: 56px;
-      height: 56px;
-    }
   
-    @media screen and (min-width: $screen-xl-min) {
-      width: 64px;
-      height: 64px;
+  .contact-form {
+
+    input[type='text'] {
+      height: 20px;
+    }
+
+    #message {
+      height: 300px;
+    }
+
+    input[type='submit'] {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 15px;
+      border: 2px solid #fff;
+      font-size: 16px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background-color 0.25s ease-in-out;
+    }
+    
+    input[type='submit']:hover {
+      background-color: #CCCCCC;
+      color: #000;
+      // cursor: pointer;
+    }
+    
+    input[type='text'], textarea {
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin: 2px;
+      padding: 10px;
+      background-color: #000;
+      color: #FFF;
+      border: #000;
+      border-radius: 5px;
+      width: 500px;
     }
   }
 }
