@@ -16,11 +16,6 @@ $screen-xl-min: 1200px;
   text-align: center;
   scroll-margin: 70px;
 
-  @media screen and (max-width: $screen-sm-min) {
-    scroll-margin: 0;
-  }
-  
-
   .container {
     padding: 5px;
     margin: 5px 5%;
