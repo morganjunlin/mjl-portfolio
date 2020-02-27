@@ -16,7 +16,7 @@ $screen-xl-min: 1200px;
   background-color: #252934;
   background: linear-gradient(#25293460, #252934), url('https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
   background-position: center;
-  color: #ffffff;
+  color: #f0ebeb;
   // scroll-margin: 70px;
 
   // @media screen and (max-width: $screen-xl-min) {
@@ -41,7 +41,7 @@ $screen-xl-min: 1200px;
 
   h1 {
     font-size: 30pt;
-    text-shadow: -2px -2px #000000;
+    // text-shadow: -2px -2px #000000;
   }
   
   .contact-form {
