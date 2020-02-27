@@ -16,7 +16,7 @@ const Projects = ({ projectsRef, handleModal, productJSON }) => {
       <h1 className='title'>
         APPLICATIONS
       </h1>
-
+      
       <div className='container'>
         {productJSON.map((product, i) => {
           let { title, subtitle, stacks, css } = product

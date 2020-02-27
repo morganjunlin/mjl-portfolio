@@ -13,11 +13,16 @@ $screen-xl-min: 1200px;
 .projects {
   background-color: #EEEEEE;
   padding: 30px 5px 95px 5px;
-  // margin: 5px;
-  // scroll-margin: 70px;
+  background: linear-gradient(#EEEEEE, rgba(238, 238, 238, 0.747)), url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   
   h1.title {
     font-size: 30pt;
+    color: #000;
+    // text-shadow: -2px -2px #000000;
   }
 
   .title {
@@ -28,7 +33,7 @@ $screen-xl-min: 1200px;
     padding: 5px 0;
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-flow: row;
     justify-content: center;
     
     @media screen and (max-width: $screen-md-min) {
@@ -45,6 +50,7 @@ $screen-xl-min: 1200px;
       // background: #fff;
       margin: 0 5px;
       // align-self: center;
+      // box-shadow: -3px -3px #000000;
 
       @media screen and (max-width: $screen-lg-min) {
         margin: 5px;

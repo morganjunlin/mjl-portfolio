@@ -23,7 +23,7 @@ const Contact = ({ contactRef }) => {
       <h1>
         CONTACT
       </h1>
-
+      
       <form className='contact-form' method='POST' action='./send.php'>
         <div><input type='text' id='name' name='name' placeholder='Name' onChange={handleNameChange} /></div>
         <div><input type='text' id='email' name='email' placeholder='Email' onChange={handleEmailChange} /></div>
