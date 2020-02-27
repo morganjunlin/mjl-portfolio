@@ -15,6 +15,11 @@ const Contact = ({ contactRef }) => {
 
   return (
     <section id='contact' className='contact' ref={contactRef}>
+      <center>
+        <div className='arrow-up'>
+        </div>
+      </center>
+      
       <h1>
         CONTACT
       </h1>

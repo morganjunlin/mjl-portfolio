@@ -11,11 +11,11 @@ $screen-lg-min: 992px;
 $screen-xl-min: 1200px;
 
 .contact {
-  padding: 20px 5px 55px 5px;
+  padding: 0 5px 150px 5px;
   text-align: center;
   background-color: #252934;
   color: #ffffff;
-  scroll-margin: 70px;
+  // scroll-margin: 70px;
 
   // @media screen and (max-width: $screen-xl-min) {
   //   margin: 5px;
@@ -24,6 +24,18 @@ $screen-xl-min: 1200px;
   // @media screen and (min-width: $screen-xl-min) {
   //   margin: 12px 64px;
   // }
+
+  .arrow-up {
+    // text-align: center;
+    width: 0;
+    // margin: 0 auto; 
+    height: 100px;
+    // right: 50%; 
+    // left: 300px;
+    border-left: 49vw solid transparent;
+    border-right: 49vw solid transparent;
+    border-top: 50px solid #fff;
+  }
 
   h1 {
     font-size: 30pt;

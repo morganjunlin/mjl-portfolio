@@ -17,7 +17,7 @@ const getDimensions = ele => {
   const { height } = ele.getBoundingClientRect();
   const offsetTop = ele.offsetTop;
   const offsetBottom = offsetTop + height;
-
+  console.log(height, 'this is height of ', ele)
   return {
     height,
     offsetTop,
@@ -27,8 +27,8 @@ const getDimensions = ele => {
 
 const scrollTo = ele => {
   ele.scrollIntoView({
-    behavior: "smooth",
-    block: "start",
+    behavior: 'smooth',
+    block: 'start',
   });
 };
 
@@ -46,11 +46,11 @@ export default function App() {
   const contactRef = useRef(null);
 
   const sectionRefs = [
-    { section: "home", ref: homeRef },
-    { section: "about", ref: aboutRef },
-    { section: "stacks", ref: stacksRef },
-    { section: "projects", ref: projectsRef },
-    { section: "contact", ref: contactRef },
+    { section: 'home', ref: homeRef },
+    { section: 'about', ref: aboutRef },
+    { section: 'stacks', ref: stacksRef },
+    { section: 'projects', ref: projectsRef },
+    { section: 'contact', ref: contactRef },
   ];
 
   const handleModal = (i) => {
@@ -71,7 +71,9 @@ export default function App() {
         }
       });
 
-      if (selected && selected.section !== visibleSection) {
+      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        setVisibleSection('contact');
+      } else if (selected && selected.section !== visibleSection) {
         setVisibleSection(selected.section);
       } else if (!selected && visibleSection) {
         setVisibleSection(undefined);
@@ -79,9 +81,9 @@ export default function App() {
     };
 
     handleScroll();
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [visibleSection]);
 
@@ -93,7 +95,9 @@ export default function App() {
         project={productJSON[modalID]} 
       />
       <Header 
+        getDimensions={getDimensions}
         homeRef={homeRef} 
+        navigationRef={navigationRef}
         projectsRef={projectsRef} 
         scrollTo={scrollTo} 
       />
@@ -107,13 +111,13 @@ export default function App() {
         contactRef={contactRef}
         scrollTo={scrollTo} 
       />
-      <About aboutRef={aboutRef} />
+      <Stacks stacksRef={stacksRef} />
       <Projects 
         projectsRef={projectsRef} 
         handleModal={handleModal} 
         productJSON={productJSON}
       />
-      <Stacks stacksRef={stacksRef} />
+      <About aboutRef={aboutRef} />
       <Contact contactRef={contactRef} /> 
       <Footer />
     </>

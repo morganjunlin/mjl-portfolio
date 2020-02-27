@@ -16,7 +16,7 @@ $screen-xl-min: 1200px;
   font-family: Lato;
   background-image: $image-url;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100 - 70px);
+  height: calc(var(--vh, 1vh) * 100 - var(--nh));
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
