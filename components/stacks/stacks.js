@@ -43,11 +43,6 @@ module.exports = {
       image: 'https://cdn.svgporn.com/logos/mongodb.svg'
     },
     {
-      id: 'mongoose',
-      name: 'Mongoose',
-      image: 'https://mongoosejs.com/docs/images/mongoose5_62x30_transparent.png'
-    },
-    {
       id: 'psql',
       name: 'PostgreSQL',
       image: 'https://cdn.svgporn.com/logos/postgresql.svg'
@@ -57,11 +52,6 @@ module.exports = {
       name: 'MySQL',
       image: 'https://cdn.svgporn.com/logos/mysql.svg'
     },
-    {
-      id: 'sequelize',
-      name: 'Sequelize',
-      image: 'https://cdn.svgporn.com/logos/sequelize.svg'
-    }
   ],
   Deployment: [
     {
@@ -83,11 +73,6 @@ module.exports = {
       id: 'heroku',
       name: 'Heroku',
       image: 'https://cdn.svgporn.com/logos/heroku-icon.svg'
-    },
-    {
-      id: 'artillery',
-      name: 'Artillery',
-      image: 'https://camo.githubusercontent.com/b386570e1c4595293de68557663ca47ac522b55c/68747470733a2f2f617274696c6c6572792e696f2f696d672f666c61672e706e67'
     },
     {
       id: 'loader',
