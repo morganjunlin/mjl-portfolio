@@ -28,6 +28,7 @@
     "css-loader": "^3.4.2",
     "node-sass": "^4.13.1",
     "path": "^0.12.7",
+    "php-loader": "^0.2.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "sass-loader": "^8.0.2",
