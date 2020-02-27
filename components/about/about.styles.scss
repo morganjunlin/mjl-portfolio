@@ -24,6 +24,11 @@ $screen-xl-min: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    
+    @media screen and (max-width: $screen-sm-min) {
+      flex-direction: column;
+      align-items: center;
+    }
   
     @media screen and (max-width: $screen-lg-min) {
       margin: 0;
@@ -67,8 +72,9 @@ $screen-xl-min: 1200px;
     padding: 20px;
     position: relative;
 
-      @media screen and (max-width: $screen-md-min) {
+      @media screen and (max-width: $screen-sm-min) {
         font-size: 0.8em;
+        margin: 20px 0;
       }
 
       // @media screen and (min-width: $screen-md-min) {
@@ -85,12 +91,20 @@ $screen-xl-min: 1200px;
 
     .speech-bubble::after {
         border-left: 20px solid transparent;
-        border-top: 20px solid #EEEEEE;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid #EEEEEE;
         content: "";
         position: absolute;
-        // bottom: -20px;
-        // right: 20px;
         left:-19px;
         top: 56px;
+
+        @media screen and (max-width: $screen-sm-min) {
+          border-left: 20px solid transparent;
+          border-right: 20px solid transparent;
+          border-bottom: 20px solid #EEEEEE;
+          border-top: 0;
+          left: 43%;
+          top: -13px;
+        }
     }
 }

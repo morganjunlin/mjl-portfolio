@@ -9,22 +9,31 @@ const Stacks = ({ stacksRef }) => (
       <h1>
         TECH STACKS
       </h1>
-
-      {Object.entries(stacks).map(([technology, stacks], i) => <Stack key={i} technology={technology} stacks={stacks}/>)}
+      <div className='list'>
+        {Object.entries(stacks).map(([technology, stacks], i) => {
+          // if (i % 2 === 0) {
+            return (
+                <Stack key={i} technology={technology} stacks={stacks}/> 
+            )
+          // }
+        })}
+      </div>
     </div>
   </section>
 )
 
 const Stack = ({ technology, stacks }) => (
-  <>
-    <h3>
-      {
-        technology === 'Deployment' ? 'Deployment / Testing'
-        : technology === 'Skills' ? 'Developer Skills'
-        : technology
-      }
-    </h3>
-    <div className='technology'>
+  <div className='technology'>
+    <div>
+      <h3>
+        {
+          technology === 'Deployment' ? 'Deployment / Testing'
+          : technology === 'Skills' ? 'Developer Skills'
+          : technology
+        }
+      </h3>
+    </div>
+    <div className='stack'>
       {stacks.map((stack, i) => {
         const { id, name, image } = stack;
         return (
@@ -39,7 +48,7 @@ const Stack = ({ technology, stacks }) => (
         )
       })}
     </div>
-  </>
+  </div>
 )
 
 export default Stacks;

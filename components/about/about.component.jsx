@@ -8,7 +8,9 @@ const About = ({ aboutRef }) => (
       ABOUT
     </h1>
     <div className='container'>
-      <img className='profile-pic' src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/IMG_2062_512.jpg' />
+      <div>
+        <img className='profile-pic' src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/IMG_2062_512.jpg' />
+      </div>
 
       <div className='item speech-bubble'>
         <p>

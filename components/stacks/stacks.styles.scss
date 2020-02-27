@@ -29,48 +29,61 @@ $screen-xl-min: 1200px;
 
   .container {
     padding: 5px;
-    margin: 5px;
+    margin: 5px 5%;
     
     h1 {
       font-size: 30pt;
     }
 
-    .technology {
-      list-style: none;
+    .list {
+      
       display: flex;
-      flex-direction: row;
       justify-content: center;
+      flex-flow: row wrap;
+
+      .technology {
+        flex: 0 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // margin: 0px 10px;
+        // padding: 0px 10px;
       
-      .item {
-        margin: 5px;
-        padding: 5px;
+        // background-color: #ccc;
+        
+        .stack {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
 
-        .icon {
-          // cursor: pointer;
+          .item {
+            margin: 5px;
+            padding: 5px;
 
-          @media screen and (max-width: $screen-lg-min) {
-            width: 32px;
-            height: 32px;
+            @media screen and (max-width: $screen-sm-min) {
+              margin: 2px;
+              padding: 2px;
+            }
+            
+            .icon {
+              width: 64px;
+              height: 64px;
+
+              @media screen and (max-width: $screen-lg-min) {
+                width: 32px;
+                height: 32px;
+              }
+            }
+    
+            span {
+              @media screen and (max-width: $screen-sm-min) {
+                font-size: 9px;
+              }
+            }
           }
-      
-          @media screen and (min-width: $screen-lg-min) {
-            width: 64px;
-            height: 64px;
-          }
-        }
-
-        span {
-          .icon:hover & {
-            transform:translateY(0px) 
-          }
-
-          transition: all 0.5s ease-in-out;
         }
       }
     }
-
   }
-  
 }
-
 

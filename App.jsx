@@ -114,7 +114,7 @@ export default function App() {
         productJSON={productJSON}
       />
       <Stacks stacksRef={stacksRef} />
-      <Contact contactRef={contactRef} />
+      <Contact contactRef={contactRef} /> 
       <Footer />
     </>
   )

@@ -1,3 +1,15 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
 .modal {
   z-index: 99;
   top: 0;
@@ -17,7 +29,10 @@
     margin: 0 300px;
     width: 750px;
 
-    
+    @media screen and (max-width: $screen-sm-min) {
+      font-size: 12px;
+      width: 320px;
+    }
 
     .carousel {
       text-align: center;
@@ -49,6 +64,10 @@
         font-size: 16px;
         letter-spacing: 1px;
         transition: background-color 0.25s ease-in-out;
+
+        @media screen and (max-width: $screen-sm-min) {
+          font-size: 12px;
+        }
       }
       
       button:hover {
