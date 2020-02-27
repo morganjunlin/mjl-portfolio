@@ -16,7 +16,7 @@ $screen-xl-min: 1200px;
   scroll-margin: 70px;
 
   @media screen and (max-width: $screen-sm-min) {
-    scroll-margin: 120px;
+    scroll-margin: 0;
   }
 
   .title {
