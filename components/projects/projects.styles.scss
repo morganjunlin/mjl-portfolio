@@ -13,7 +13,7 @@ $screen-xl-min: 1200px;
 .projects {
   background-color: #EEEEEE;
   padding: 30px 5px 95px 5px;
-  background: linear-gradient(#EEEEEE, rgba(238, 238, 238, 0.747)), url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background: linear-gradient(#EEEEEE, rgba(238, 238, 238, 0.60)), url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,7 +22,7 @@ $screen-xl-min: 1200px;
   h1.title {
     font-size: 30pt;
     color: #000;
-    // text-shadow: -2px -2px #000000;
+    text-shadow: -2px -2px #fff;
   }
 
   .title {
