@@ -7,6 +7,11 @@ const Footer = (props) => (
     <p>
       Made by Morgan. 2019-2020.
     </p>
+    <div>
+      <img src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/email-13.svg' />
+      <img src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/linkedin-3.svg' onClick={() => window.location.href='https://www.linkedin.com/in/morganjunlin/'} />
+      <img src='https://mjl-portfolio.s3.us-east-2.amazonaws.com/github-1.svg' onClick={() => window.location.href='https://github.com/morganjunlin/'}/>
+    </div>
   </section>
 )
 

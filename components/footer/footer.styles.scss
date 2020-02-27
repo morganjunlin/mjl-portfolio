@@ -1,3 +1,15 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
 .footer {
   // margin: 5px;
   padding: 25px;
@@ -5,4 +17,12 @@
   background-color: #1B242F;
   text-align: center;
   font-size: 0.8em;
+
+  img {
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+  }
 }
