@@ -10,6 +10,16 @@ $screen-lg-min: 992px;
 // Large tablets and desktops
 $screen-xl-min: 1200px;
 
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
 .projects {
   background-color: #EEEEEE;
   padding: 30px 5px 95px 5px;
@@ -63,11 +73,11 @@ $screen-xl-min: 1200px;
       }
 
       #mvp {
-        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/mvp.png');
+        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/IMG_4693+copy.png');
       }
   
       #sdc {
-        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/sdc.png');
+        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/sdc-2.png');
       }
   
       #fec {
@@ -81,6 +91,10 @@ $screen-xl-min: 1200px;
         width: 320px;
         height: 240px;
         text-align: center;
+        // animation-name: fadeIn;
+        // animation-duration: 0.5s;
+        // opacity: 0;
+        // visibility: hidden;
 
         @media screen and (max-width: $screen-lg-min) {
           width: 270px;
@@ -106,6 +120,16 @@ $screen-xl-min: 1200px;
           color: #000;
           cursor: pointer;
         }
+      }
+
+      .mask.show {
+        animation-name: fadeIn;
+        animation-duration: 0.5s;
+      }
+      
+      .mask.hide {
+        animation-name: fadeOut;
+        animation-duration: 0.3s;
       }
 
       .project {

@@ -10,6 +10,11 @@ $screen-lg-min: 992px;
 // Large tablets and desktops
 $screen-xl-min: 1200px;
 
+@keyframes fadeIn {
+  from {color: #E31B6D;}
+  to {color: #fff;}
+}
+
 .sticky {
   position: sticky;
   top: 0;
@@ -45,6 +50,8 @@ $screen-xl-min: 1200px;
     
     .selected {
       color: #E31B6D;
+      animation-name: fadeIn;
+      animation-duration: 0.7s;
     }
   }
 }

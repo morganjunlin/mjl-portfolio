@@ -9,7 +9,7 @@ module.exports = [
       'Designed relational database schema for complex SQL operations while adhering to RESTful API'
     ],
     images: [
-      'https://mjl-portfolio.s3.us-east-2.amazonaws.com/mvp.png'
+      'https://mjl-portfolio.s3.us-east-2.amazonaws.com/IMG_4693+copy.png'
     ],
     css: 'mvp',
     link: 'https://github.com/morganjunlin/platonic.ly'
@@ -24,7 +24,7 @@ module.exports = [
       'Load-balancing traffic using NGINX through continuous testing for stability of heavy incoming user traffic using load tester tools such as Artillery.io and Loader.io'
     ],
     images: [
-      'https://mjl-portfolio.s3.us-east-2.amazonaws.com/sdc.png'
+      'https://mjl-portfolio.s3.us-east-2.amazonaws.com/sdc-2.png'
     ],
     css: 'sdc',
     link: 'https://github.com/morganjunlin/time-sponsored'

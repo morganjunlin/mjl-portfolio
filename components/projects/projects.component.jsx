@@ -1,10 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './projects.styles.scss';
 
 const Projects = ({ projectsRef, handleModal, productJSON }) => {
   const [mask, setMask] = useState(false);
   const [maskID, setMaskID] = useState();
+  const [render, setRender] = useState(mask);
+
+  useEffect(() => {
+    if (mask) setRender(true);
+  }, [mask]);
+
+  const onAnimationEnd = () => {
+    if (!mask) setRender(false);
+  };
 
   const handleMask = (i) => {
     setMask(prevState => !prevState)
@@ -23,17 +32,17 @@ const Projects = ({ projectsRef, handleModal, productJSON }) => {
 
           return (
             <div className='item' key={i}>
-              {mask && maskID === i ? 
-                <div className='mask' onMouseLeave={() => handleMask(i)}>
+              {render && maskID === i && ( 
+                <div className={`mask ${mask ? 'show' : 'hide'}`} onMouseLeave={() => handleMask(i)} onAnimationEnd={onAnimationEnd}>
                   <div className='mask-item'>
                     <h1>{title}</h1>
                     <h4>{stacks}</h4>
-                    <button onClick={() => {handleModal(i); handleMask(i)}}>
+                    <button onClick={() => handleModal(i)}>
                       View Project
                     </button>
                   </div>
-                </div> : null}
-              <div id={css} className='project' onMouseOver={() => handleMask(i)}>
+              </div>)}
+              <div id={css} className='project' onMouseEnter={() => handleMask(i)}>
               </div>
               <div className='description'>
                 <h2>{title}</h2>

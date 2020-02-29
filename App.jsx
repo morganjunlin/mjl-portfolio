@@ -17,7 +17,7 @@ const getDimensions = ele => {
   const { height } = ele.getBoundingClientRect();
   const offsetTop = ele.offsetTop;
   const offsetBottom = offsetTop + height;
-  console.log(height, 'this is height of ', ele)
+
   return {
     height,
     offsetTop,
@@ -90,7 +90,8 @@ export default function App() {
   return (
     <>
       <Modal 
-        showModal={showModal} 
+        showModal={showModal}
+        setModal={setModal} 
         handleModal={handleModal}
         project={productJSON[modalID]} 
       />
