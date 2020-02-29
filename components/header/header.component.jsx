@@ -17,7 +17,7 @@ const Header = ({ getDimensions, homeRef, navigationRef }) => {
     <section id='header' className='header' ref={homeRef}>
       <div className='caption'>
         <div className='item'>
-          <span className='name border'>
+          <span id='name' className='border'>
             Morgan Jun Lin
           </span>
         </div>

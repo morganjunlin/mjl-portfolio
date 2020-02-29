@@ -33,6 +33,16 @@ $screen-xl-min: 1200px;
     .item {
       padding: 12px 0;
 
+      #name {
+        font-size: 50px;
+
+        @media screen and (max-width: $screen-sm-min) {
+          padding: 10px;
+          letter-spacing: 8px;
+          font-size: 36px;
+        }
+      }
+
       .border {
         background-color: #111;
         padding: 18px;

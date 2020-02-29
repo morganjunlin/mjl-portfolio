@@ -14,13 +14,13 @@ const About = ({ aboutRef }) => (
 
       <div className='item speech-bubble'>
         <p>
-          Hey there, Morgan here! I'm a full-stack software engineer that's driven by the sheer desire to help people solve problems. I have a passion to stay up-to-date and learning the latest technologies, as well as polish my existing skills to better my craft.
+          Hey there, Morgan here! I'm a full-stack software engineer that's driven by the sheer desire to help people solve problems. My passion is to remain up-to-date with current trends, and learn the latest technology to polish my existing skills to further improve my craft.
         </p>
         <p>
-          My current tech-related interests are, and have been for the last decade, the evolution of smartphones and how we as a society interact with them, as well as FinTech and its relation and use-cases with smartphones. I find it very fascinating to see how far we've come since the first iPhone was released, and it is always exciting to see how we as a society adapt and continue to grow as the smartphone era matures.
+          My current tech-related interest is, and has been for the last decade, in the evolution of smartphones and our interactions with them. For instance, I am extremely fascinated with FinTech’s growth and its relation and use-cases with smartphones. It is incredible to witness how far we have come ever since the release of the first iPhone, and how we, as a society, adapt and grow as technological innovations continue to revolutionize the industry. 
         </p>
         <p>
-          When I'm not thinking about tech, things I like to do for fun and leisure is exploring the outside world through photography, eating delicious foods at new restaurants, socializing with pals, or the occasional light gaming.
+          When I'm not thinking about tech, things I like to do for fun and leisure is exploring the outside world by taking photographs, eating delicious foods at new restaurants, socializing with pals, or occasionally playing video games.
         </p>
       </div>
     </div>
