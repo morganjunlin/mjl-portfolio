@@ -33,7 +33,7 @@ module.exports = [
   {
     title: 'Nordstrom Clone',
     subtitle: 'Microservice Architecture UX Clone',
-    stacks: 'React | Express | MongoDB',
+    stacks: 'React | Express | MongoDB | Heroku',
     description: [
       'Recreated functionality of the nav-items by storing individual department into categories and mathematically dividing these categories through CSS widths and floats',
       'Incorporated a micro-service architecture to isolate maintainability of data and error handling',
