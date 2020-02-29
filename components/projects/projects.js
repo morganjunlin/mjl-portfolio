@@ -2,11 +2,12 @@ module.exports = [
   {
     title: 'Platonic.ly',
     subtitle: 'Event Finder Social Media Application',
-    stacks: 'React Native | Express | PostgreSQL',
+    stacks: 'React Native | Express | PostgreSQL | AWS EC2',
     description: [
       'Provided users with multiple sign-in options, including Facebook, by utilizing OAuth 2.0 as the authentication protocol',
       'Routed individual user profile pages to be viewed from event listings with React Navigation, as well as dynamically render events the user is attending',
-      'Designed relational database schema for complex SQL operations while adhering to RESTful API'
+      'Designed relational database schema for complex SQL operations while adhering to RESTful API',
+      'Demo can be found here: https://expo.io/@morganjunlin/platonicly'
     ],
     images: [
       'https://mjl-portfolio.s3.us-east-2.amazonaws.com/IMG_4693+copy.png'
