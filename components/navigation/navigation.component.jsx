@@ -22,12 +22,11 @@ const Navigation = (props) => {
                   {name}
               </button>
             )
-
           })
-            
         }
       </nav>
     </div>
-)}
+  )
+}
 
 export default Navigation;

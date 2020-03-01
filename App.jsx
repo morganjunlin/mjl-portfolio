@@ -32,12 +32,26 @@ const scrollTo = ele => {
   });
 };
 
+const FadeInSection = ({ domRef, children }) => {
+  const [isVisible, setVisible] = useState(false);
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => setVisible(entry.isIntersecting));
+    });
+    observer.observe(domRef.current);
+  }, []);
+  return (
+    <div className={`fade-in-section ${isVisible ? 'is-visible' : ''}`} ref={domRef}>
+      {children}
+    </div>
+  );
+}
+
 export default function App() {
   const [visibleSection, setVisibleSection] = useState();
   const [showModal, setModal] = useState(false);
   const [modalID, setModalID] = useState(0);
 
-  const modalRef = useRef();
   const homeRef = useRef(null);
   const navigationRef = useRef(null);
   const aboutRef = useRef(null);
@@ -56,14 +70,14 @@ export default function App() {
   const handleModal = (i) => {
     setModal(prevState => !prevState);
     setModalID(i);
-  }
+  };
 
   useEffect(() => {
     const handleScroll = () => {
       const { height: headerHeight } = getDimensions(navigationRef.current);
       const scrollPosition = window.scrollY + headerHeight;
 
-      const selected = sectionRefs.find(({ section, ref }) => {
+      const selected = sectionRefs.find(({ ref }) => {
         const ele = ref.current;
         if (ele) {
           const { offsetBottom, offsetTop } = getDimensions(ele);
@@ -112,14 +126,23 @@ export default function App() {
         contactRef={contactRef}
         scrollTo={scrollTo} 
       />
-      <Stacks stacksRef={stacksRef} />
+      <Stacks 
+        FadeInSection={FadeInSection} 
+        stacksRef={stacksRef} />
       <Projects 
+        FadeInSection={FadeInSection}
         projectsRef={projectsRef} 
         handleModal={handleModal} 
         productJSON={productJSON}
       />
-      <About aboutRef={aboutRef} />
-      <Contact contactRef={contactRef} /> 
+      <About 
+        FadeInSection={FadeInSection}
+        aboutRef={aboutRef} 
+      />
+      <Contact 
+        FadeInSection={FadeInSection}
+        contactRef={contactRef} 
+      /> 
       <Footer />
     </>
   )

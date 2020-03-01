@@ -1,23 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import stacks from './stacks.js';
 import './stacks.styles.scss';
 
-const Stacks = ({ stacksRef }) => (
+const Stacks = ({ FadeInSection, stacksRef }) => (
   <section id='stacks' className='stacks' ref={stacksRef}>
     <div className='container'>
       <h1>
         TECH STACKS
       </h1>
-      <div className='list'>
-        {Object.entries(stacks).map(([technology, stacks], i) => {
-          // if (i % 2 === 0) {
+
+      <FadeInSection domRef={stacksRef}>
+        <div className='list'>
+          {Object.entries(stacks).map(([technology, stacks], i) => {
             return (
-                <Stack key={i} technology={technology} stacks={stacks}/> 
+              <Stack key={i} technology={technology} stacks={stacks}/> 
             )
-          // }
-        })}
-      </div>
+          })}
+        </div>
+      </FadeInSection>
     </div>
   </section>
 )

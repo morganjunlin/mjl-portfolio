@@ -2,7 +2,7 @@ import React, { useState, useEffect }from 'react';
 
 import './modal.styles.scss';
 
-const Modal = ({ showModal, setModal, handleModal, project }) => {
+const Modal = ({ showModal, setModal, project }) => {
   let { title, subtitle, description, images, css, link } = project;
 
   const [render, setRender] = useState(showModal);
@@ -17,7 +17,6 @@ const Modal = ({ showModal, setModal, handleModal, project }) => {
 
   return (
     render && (
-    // <div style={Object.assign({}, zIndex: 99, animation: `${showModal ? 'fadeIn' : 'fadeOut'} 0.3s`)} onAnimationEnd={onAnimationEnd}>
       <div className={`modal ${showModal ? 'show' : 'hide'}`} onAnimationEnd={onAnimationEnd}>
         <div className='item'>
           <div className='carousel'>
@@ -37,9 +36,8 @@ const Modal = ({ showModal, setModal, handleModal, project }) => {
           </div>
         </div>
       </div>
-    // </div>
     )
   )
-}
+};
 
 export default Modal;

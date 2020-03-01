@@ -2,7 +2,7 @@ import React from 'react';
 
 import './footer.styles.scss';
 
-const Footer = (props) => (
+const Footer = () => (
   <section className='footer'>
     <p>
       Made by Morgan. 2019-2020.

@@ -29,6 +29,6 @@ const Header = ({ getDimensions, homeRef, navigationRef }) => {
       </div>
     </section>
   );
-}
+};
 
 export default Header;

@@ -13,7 +13,6 @@ $screen-xl-min: 1200px;
 .about {
   padding: 30px 5px 75px 5px;
   margin: 20px;
-  // scroll-margin: 70px;
 
   .title {
     text-align: center;
@@ -25,6 +24,8 @@ $screen-xl-min: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0 200px;
+    padding: 0 75px;
     
     @media screen and (max-width: $screen-sm-min) {
       flex-direction: column;
@@ -35,24 +36,16 @@ $screen-xl-min: 1200px;
       margin: 0;
       padding: 0;
     }
-
-    @media screen and (min-width: $screen-xl-min) {
-      margin: 0 200px;
-      padding: 0 75px;
-    }
   }
 
   .profile-pic {
     border-radius: 50%;
+    width: 256px;
+    height: 256px;
 
     @media screen and (max-width: $screen-md-min) {
       width: 200px;
       height: 200px;
-    }
-
-    @media screen and (min-width: $screen-md-min) {
-      width: 256px;
-      height: 256px;
     }
   }
 
@@ -63,14 +56,9 @@ $screen-xl-min: 1200px;
 
   .speech-bubble {
     background: #EEEEEE;
-    -webkit-border-radius: 4px;
-            border-radius: 4px;
-    // font-size: 1.2rem;
-    // line-height: 1.3;
+    border-radius: 4px;
     left: 20px;
     margin: 20px;
-    // max-width: 600px;
-    // max-height:200px;
     padding: 20px;
     position: relative;
 
@@ -79,10 +67,6 @@ $screen-xl-min: 1200px;
         font-size: 0.8em;
         margin: 20px 0;
       }
-
-      // @media screen and (min-width: $screen-md-min) {
-        
-      // }
     }
 
     .speech-bubble p {
