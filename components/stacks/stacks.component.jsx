@@ -6,7 +6,7 @@ import './stacks.styles.scss';
 const Stacks = ({ FadeInSection, stacksRef }) => (
   <section id='stacks' className='stacks' ref={stacksRef}>
     <div className='container'>
-      <h1>
+      <h1 className='title'>
         TECH STACKS
       </h1>
 
@@ -44,7 +44,7 @@ const Stack = ({ technology, stacks }) => (
               src={image} 
               id={id}
             /> <br />
-            <span>{name}</span>
+            <span className='text'>{name}</span>
           </div>
         )
       })}

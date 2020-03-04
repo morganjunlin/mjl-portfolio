@@ -19,8 +19,8 @@ const Modal = ({ showModal, setModal, project }) => {
     render && (
       <div className={`modal ${showModal ? 'show' : 'hide'}`} onAnimationEnd={onAnimationEnd}>
         <div className='item'>
-          <div className='carousel'>
-            <img id={css} src={images[0]} />
+          <div className='presentation'>
+            <img className={`${css === 'mvp' ? 'mvp' : 'img'}`} src={images[0]} />
           </div>
           <div className='description'>
             <h1>{title}</h1>
@@ -31,8 +31,8 @@ const Modal = ({ showModal, setModal, project }) => {
             </ul>
           </div>
           <div className='bottom-nav'>
-            <button onClick={() => window.location.href=`${link}`}>View Code</button>
-            <button onClick={() => setModal(showModal => !showModal)}>Close</button>
+            <button className='btn' onClick={() => window.location.href=`${link}`}>View Code</button>
+            <button className='btn' onClick={() => setModal(showModal => !showModal)}>Close</button>
           </div>
         </div>
       </div>

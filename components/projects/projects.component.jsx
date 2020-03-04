@@ -22,7 +22,7 @@ const Projects = ({ FadeInSection, projectsRef, handleModal, productJSON }) => {
 
   return (
     <section id='projects' className='projects' ref={projectsRef}>
-        <h1 className='title'>
+        <h1 className='title section-title'>
           APPLICATIONS
         </h1>
         
@@ -36,18 +36,18 @@ const Projects = ({ FadeInSection, projectsRef, handleModal, productJSON }) => {
                 {render && maskID === i && ( 
                   <div className={`mask ${mask ? 'show' : 'hide'}`} onMouseLeave={() => handleMask(i)} onAnimationEnd={onAnimationEnd}>
                     <div className='mask-item'>
-                      <h1>{title}</h1>
+                      <h1 className='title'>{title}</h1>
                       <h4>{stacks}</h4>
-                      <button onClick={() => handleModal(i)}>
+                      <button className='btn' onClick={() => handleModal(i)}>
                         View Project
                       </button>
                     </div>
                 </div>)}
-                <div id={css} className='project' onMouseEnter={() => handleMask(i)}>
+                <div className={`project ${css}`} onMouseEnter={() => handleMask(i)}>
                 </div>
                 <div className='description'>
-                  <h2>{title}</h2>
-                  <h4><em>{subtitle}</em></h4>
+                  <h2 className='caption'>{title}</h2>
+                  <h4 className='caption subtitle'><em>{subtitle}</em></h4>
                 </div>
               </div>
             )})}

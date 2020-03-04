@@ -49,17 +49,16 @@ $screen-xl-min: 1200px;
       width: 680px;
     }
 
-    .carousel {
+    .presentation {
       text-align: center;
-
-      #mvp {
-        width: 25%;
-      }
-
-      img {
+      
+      .img {
         width: 100%;
       }
       
+      .mvp {
+        width: 25%;
+      }
     }
 
     .description {
@@ -71,7 +70,7 @@ $screen-xl-min: 1200px;
       display: flex;
       justify-content: space-between;
 
-      button {
+      .btn {
         background-color: #222;
         color: #fff;
         padding: 10px 15px;
@@ -83,13 +82,14 @@ $screen-xl-min: 1200px;
         @media screen and (max-width: $screen-sm-min) {
           font-size: 12px;
         }
+
+        &:hover {
+          background-color: #CCCCCC;
+          color: #000;
+          cursor: pointer;
+        }
       }
       
-      button:hover {
-        background-color: #CCCCCC;
-        color: #000;
-        cursor: pointer;
-      }
     }
   }
 }

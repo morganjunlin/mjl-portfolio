@@ -25,31 +25,31 @@ $screen-xl-min: 1200px;
   align-items: center;
   justify-content: center;
 
-  .caption {
+  .container {
     text-align: center;
     color: #FFF;
 
     .item {
       padding: 12px 0;
-
-      #name {
-        font-size: 50px;
-
-        @media screen and (max-width: $screen-sm-min) {
-          font-size: 26px;
-        }
-      }
-
-      .border {
+      
+      .text {
         background-color: #111;
         padding: 18px;
         letter-spacing: 10px;
         font-size: 25px;
-
+        
         @media screen and (max-width: $screen-sm-min) {
           padding: 10px;
           letter-spacing: 8px;
           font-size: 14px;
+        }
+      }
+
+      .name {
+        font-size: 50px;
+
+        @media screen and (max-width: $screen-sm-min) {
+          font-size: 26px;
         }
       }
     }

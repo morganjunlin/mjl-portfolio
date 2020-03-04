@@ -18,7 +18,7 @@ $screen-xl-min: 1200px;
     padding: 5px;
     margin: 5px 5%;
     
-    h1 {
+    .title {
       font-size: 30pt;
       letter-spacing: 2px;
     }
@@ -58,7 +58,7 @@ $screen-xl-min: 1200px;
               }
             }
     
-            span {
+            .text {
               @media screen and (max-width: $screen-sm-min) {
                 font-size: 12px;
               }

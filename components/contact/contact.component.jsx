@@ -32,7 +32,7 @@ const Contact = ({ FadeInSection, contactRef }) => {
           </div>
         </center>
         
-        <h1>
+        <h1 className='title'>
           CONTACT
         </h1>
         
@@ -43,10 +43,10 @@ const Contact = ({ FadeInSection, contactRef }) => {
           action='https://formspree.io/xnqvzynq'
           onSubmit={submitForm}
         >
-          <div><input type='text' name='name' placeholder='Name' required /></div>
-          <div><input type='email' name='email' placeholder='Email' required /></div>
-          <div><textarea type='text' id='message' name='message' placeholder='Message' required /></div>
-          <div><input type='submit' value='Submit' /></div>
+          <div><input className='input name' type='text' name='name' placeholder='Name' required /></div>
+          <div><input className='input' type='email' name='email' placeholder='Email' required /></div>
+          <div><textarea className='input message' type='text' id='message' name='message' placeholder='Message' required /></div>
+          <div><input className='btn' type='submit' value='Submit' /></div>
           {status === 'ERROR' && alert('Ooops! There was an error.')}
         </form>
       </FadeInSection>

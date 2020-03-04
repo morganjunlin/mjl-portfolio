@@ -26,40 +26,13 @@ $screen-xl-min: 1200px;
     border-top: 50px solid #fff;
   }
 
-  h1 {
+  .title {
     font-size: 30pt;
     letter-spacing: 4px;
   }
   
   .contact-form {
-    input[type='text'] {
-      height: 20px;
-    }
-
-    #message {
-      height: 300px;
-    }
-
-    input[type='submit'] {
-      background-color: #000;
-      color: #fff;
-      padding: 10px 15px;
-      border: 2px solid #fff;
-      font-size: 16px;
-      letter-spacing: 1px;
-      cursor: pointer;
-      transition: background-color 0.25s ease-in-out;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-    }
-    
-    input[type='submit']:hover {
-      background-color: #CCCCCC;
-      color: #000;
-    }
-    
-    input[type='text'], input[type='email'], textarea {
+    .input {
       font-size: 16px;
       letter-spacing: 1px;
       margin: 2px;
@@ -72,6 +45,33 @@ $screen-xl-min: 1200px;
 
       @media screen and (max-width: $screen-sm-min) {
         width: 285px;
+      }
+    }
+
+    .name {
+      height: 20px;
+    }
+
+    .message {
+      height: 300px;
+    }
+
+    .btn {
+      background-color: #000;
+      color: #fff;
+      padding: 10px 15px;
+      border: 2px solid #fff;
+      font-size: 16px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: background-color 0.25s ease-in-out;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+
+      &:hover {
+        background-color: #CCCCCC;
+        color: #000;
       }
     }
   }

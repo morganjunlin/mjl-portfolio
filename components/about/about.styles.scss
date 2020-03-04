@@ -69,17 +69,10 @@ $screen-xl-min: 1200px;
       }
     }
 
-    .speech-bubble p {
-        margin: 0 0 15px;
-    }
-    .speech-bubble p:last-of-type {
-        margin-bottom: 0;
-    }
-
-    .speech-bubble::after {
+    &::after {
         border-left: 30px solid transparent;
         border-bottom: 30px solid #EEEEEE;
-        content: "";
+        content: '';
         position: absolute;
         left:-30px;
         top: 69px;
@@ -92,5 +85,13 @@ $screen-xl-min: 1200px;
           left: 45%;
           top: -13px;
         }
+    }
+
+    .speech-bubble p {
+        margin: 0 0 15px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+      }
     }
 }

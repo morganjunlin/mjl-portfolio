@@ -33,15 +33,16 @@ $screen-xl-min: 1200px;
     background-attachment: scroll;
   }
   
-  h1 {
+  .title {
     text-align: center;
   }
   
-  h1.title {
+  .section-title {
     color: #EEEEEE;
     font-size: 30pt;
     letter-spacing: 2px;
   }
+
   
   .container {
     padding: 5px 0;
@@ -73,17 +74,7 @@ $screen-xl-min: 1200px;
         width: 300px;
       }
 
-      #mvp {
-        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/IMG_4693+copy.png');
-      }
-  
-      #sdc {
-        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/sdc-2.png');
-      }
-  
-      #fec {
-        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/fec.png');
-      }
+      /* handles onHover mask */
 
       .mask {
         position: absolute;
@@ -93,7 +84,7 @@ $screen-xl-min: 1200px;
         height: 240px;
         text-align: center;
 
-        button {
+        .btn {
           background-color: #222;
           color: #fff;
           padding: 10px 15px;
@@ -101,12 +92,12 @@ $screen-xl-min: 1200px;
           font-size: 16px;
           letter-spacing: 1px;
           transition: background-color 0.25s ease-in-out;
-        }
-        
-        button:hover {
-          background-color: #CCCCCC;
-          color: #000;
-          cursor: pointer;
+
+          &:hover {
+            background-color: #CCCCCC;
+            color: #000;
+            cursor: pointer;
+          }
         }
       }
 
@@ -120,14 +111,23 @@ $screen-xl-min: 1200px;
         animation-duration: 0.3s;
       }
 
+      /* handles initial item-container view */
+
       .project {
         background-size: cover;
         height: 320px;
+      }
 
-        img {
-          overflow: hidden;
-          width: 200px;
-        }
+      .mvp {
+        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/IMG_4693+copy.png');
+      }
+  
+      .sdc {
+        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/sdc-2.png');
+      }
+  
+      .fec {
+        background-image: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/fec.png');
       }
       
       .description {
@@ -136,42 +136,16 @@ $screen-xl-min: 1200px;
         background-color: #FFFFFF;
         text-align: center;
 
-        h2, h4 {
+        .caption {
           margin: 0;
           padding: 0;
         }
 
-        h4 {
+        .caption.subtitle {
           @media screen and (max-width: $screen-sm-min) {
             font-size: 12px;
           }
         }
-      }
-
-      .btn-container {
-        text-align: center;
-        margin: 5px;
-        padding: 5px;
-
-        input {
-          background-image: url(https://mjl-portfolio.s3.us-east-2.amazonaws.com/github-4.svg);
-          background-repeat: no-repeat;
-          background-position: 5px center;
-          padding: 7px 5px 7px 35px;
-          border: 2px solid #000;
-          font-size: 16px;
-          letter-spacing: 1px;
-        }
-        
-        input:hover {
-          background-image: url(https://mjl-portfolio.s3.us-east-2.amazonaws.com/github-5.svg);
-          background-color: #CCCCCC;
-          cursor: pointer;
-        }
-      }
-
-      .item:hover {
-          background-color: #FFF;
       }
     }
   }

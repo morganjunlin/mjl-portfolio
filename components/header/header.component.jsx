@@ -15,14 +15,14 @@ const Header = ({ getDimensions, homeRef, navigationRef }) => {
 
   return (
     <section id='header' className='header' ref={homeRef}>
-      <div className='caption'>
+      <div className='container'>
         <div className='item'>
-          <span id='name' className='border'>
+          <span className='text name'>
             Morgan Jun Lin
           </span>
         </div>
         <div className='item'>
-          <span className='border'>
+          <span className='text'>
             Software Engineer
           </span>
         </div>
