@@ -67,9 +67,8 @@ $screen-xl-min: 1200px;
         font-size: 0.8em;
         margin: 20px 0;
       }
-    }
 
-    &::after {
+      &::after {
         border-left: 30px solid transparent;
         border-bottom: 30px solid #EEEEEE;
         content: '';
@@ -85,13 +84,14 @@ $screen-xl-min: 1200px;
           left: 45%;
           top: -13px;
         }
-    }
+      }
 
-    .speech-bubble p {
-        margin: 0 0 15px;
-
-        &:last-of-type {
-          margin-bottom: 0;
+      & p {
+          margin: 0 0 15px;
+  
+          &:last-of-type {
+            margin-bottom: 0;
+        }
       }
     }
 }
