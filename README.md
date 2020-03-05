@@ -1,10 +1,4 @@
 # Portfolio
+> repository for Morgan's personal portfolio page
 
-### Usage
-```
-yarn install
-yarn run start
-```
-
-### Documentation
-* [Yarn](https://yarnpkg.com/en/docs/install): Yarn documentation
+Please direct your attention to the following URL: [https://morganjunlin.github.io/](https://morganjunlin.github.io/)
