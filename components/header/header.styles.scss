@@ -1,16 +1,6 @@
+@import '../../utils/variables.scss';
+
 $image-url: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/4DBE5C62-55F6-48F6-BF73-1A460DFB5879-C.jpeg');
-
-// Small tablets and large smartphones (landscape view)
-$screen-sm-min: 576px;
-
-// Small tablets (portrait view)
-$screen-md-min: 768px;
-
-// Tablets and small desktops
-$screen-lg-min: 992px;
-
-// Large tablets and desktops
-$screen-xl-min: 1200px;
 
 .header {
   background-color: #252934;
