@@ -21,10 +21,15 @@ $image-url: url('https://mjl-portfolio.s3.us-east-2.amazonaws.com/4DBE5C62-55F6-
 
     .item {
       padding: 12px 0;
+      margin: 25px 0;
+
+      @media screen and (max-width: $screen-sm-min) {
+        margin: 0;
+      }
       
       .text {
-        background-color: #111;
         padding: 18px;
+        background-color: #111;
         letter-spacing: 10px;
         font-size: 25px;
         
